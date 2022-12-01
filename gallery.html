@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our gallery</title>
+    <link
+      rel="icon"
+      href="https://cdn2.iconfinder.com/data/icons/essential-63/24/pet-256.png"
+    />
+    <!-- FONT ICO AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap V5.2.2 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- Light box CSS -->
+    <link rel="stylesheet" href="./css/lightbox.css" />
+    <!-- main CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- page CSS -->
+    <link rel="stylesheet" href="./css/gallery.css" />
+  </head>
+  <body id="changeTheme">
+    <!-- Heading -->
+    <header class="header" id="mainHeader">
+      <nav class="container navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">Pooch Care</a>
+          <button
+            class="navbar-toggler"
+            id="showAndHide"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars"></i>
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-center"
+                  aria-current="page"
+                  href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="./services.html"
+                  >Services</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center active" href="#">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link text-center dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Blog <i class="fa fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./blog_post.html"
+                      >Blog Posts</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./blog_single.html"
+                      >Blog single</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./landing_page.html"
+                      >Landing Page</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-center" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <button class="btn" id="switchTheme" title="Click to switch theme">
+            <i class="far fa-moon"></i>
+            <i class="far fa-sun"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!-- intro -->
+    <section class="pageTitle text-center text-white">
+      <div class="container">
+        <h2 class="title-L my-0">Gallery</h2>
+        <p>
+          <a class="text-decoration-none" href="./index.html">Home</a>
+          <i class="fa-solid fa-arrow-right"></i> Gallery
+        </p>
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section class="gallery">
+      <div class="container">
+        <header>
+          <h3 class="sub-title text-center my-0">VIEW GALLERY</h3>
+          <h2 class="title-L text-center my-0">Latest Gallery</h2>
+        </header>
+        <main class="gallery__main mt-lg-5 mt-4">
+          <div class="row">
+            <figure class="col-md-4 mb-4">
+              <a
+                href="./img/g1.jpg"
+                data-title="Here is a cute and lovely puppy"
+                data-lightbox="dog-img"
+              >
+                <img class="img-fluid" src="./img/g1.jpg" alt="first dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a
+                href="./img/g3.jpg"
+                data-title="Here is a cute and lovely puppy"
+                data-lightbox="dog-img"
+              >
+                <img class="img-fluid" src="./img/g3.jpg" alt="2nd dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a
+                href="./img/g5.jpg"
+                data-title="Here is a cute and lovely puppy"
+                data-lightbox="dog-img"
+              >
+                <img class="img-fluid" src="./img/g5.jpg" alt="3rd dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a
+                href="./img/g2.jpg"
+                data-title="Here is a cute and lovely puppy"
+                data-lightbox="dog-img"
+              >
+                <img class="img-fluid" src="./img/g2.jpg" alt="4th dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a
+                href="./img/g4.jpg"
+                data-title="Here is a cute and lovely puppy"
+                data-lightbox="dog-img"
+              >
+                <img class="img-fluid" src="./img/g4.jpg" alt="5th dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a
+                href="./img/g6.jpg"
+                data-title="Here is a cute and lovely puppy"
+                data-lightbox="dog-img"
+              >
+                <img class="img-fluid" src="./img/g6.jpg" alt="6th dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a
+                href="./img/g7.jpg"
+                data-title="Here is a cute and lovely puppy"
+                data-lightbox="dog-img"
+              >
+                <img class="img-fluid" src="./img/g7.jpg" alt="7th dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a
+                href="./img/g8.jpg"
+                data-title="Here is a cute and lovely puppy"
+                data-lightbox="dog-img"
+              >
+                <img class="img-fluid" src="./img/g8.jpg" alt="8th dog" />
+              </a>
+            </figure>
+            <figure class="col-md-4 mb-4">
+              <a
+                href="./img/g9.jpg"
+                data-title="Here is a cute and lovely puppy"
+                data-lightbox="dog-img"
+              >
+                <img class="img-fluid" src="./img/g9.jpg" alt="9th dog" />
+              </a>
+            </figure>
+          </div>
+        </main>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer__col col-xl-6 col-lg-6 col-md-4 col-sm-12 col-12">
+          <h3>Contact information</h3>
+          <p>
+            <b>Address </b> : #135 block, Barnard St. Brooklyn, London 10036, UK
+          </p>
+          <p><b>Phone </b> : <a href="tel:+(12)234-11-24">+(12)234-11-24</a></p>
+          <p>
+            <b>Email </b> :
+            <a href="mailto:example@mail.com">example@mail.com</a>
+          </p>
+          <a href="#"><i class="fab fa-facebook-f"></i></a
+          ><a href="#"><i class="fab fa-twitter"></i></a
+          ><a href="#"><i class="fab fa-dribbble"></i></a
+          ><a href="#"><i class="fab fa-google"></i></a>
+        </div>
+        <div class="footer__col col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About us </a></li>
+            <li><a href="#">Blog Posts </a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col col-xl-2 col-lg-2 col-md-3 col-sm-4 col-6">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Contact Us </a></li>
+            <li><a href="#">Create account </a></li>
+            <li><a href="#">Care Center </a></li>
+            <li><a href="#">Site Feedack </a></li>
+          </ul>
+        </div>
+        <div class="footer__col col-xl-2 col-lg-2 col-md-3 col-sm-4">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">All Dogs </a></li>
+            <li><a href="#">Care Advices </a></li>
+            <li><a href="#">Care Support </a></li>
+            <li><a href="#">Veterinary Help </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <p>
+          © 2020 Pooch Care. All Rights Reserved. Design by
+          <a href="https://w3layouts.com/">W3Layouts</a>
+        </p>
+      </div>
+    </footer>
+    <!-- Back to top btn -->
+    <section>
+      <button
+        onclick="backToTopFunction()"
+        id="backToTopBtn"
+        class="back-to-top-btn"
+      >
+        ⤴
+      </button>
+    </section>
+    <!-- Main JS dark/light theme -->
+    <script src="./js/main.js"></script>
+    <!-- BOOSTRAP JS-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- LIGHT BOX JS -->
+    <script src="./js/lightbox-plus-jquery.js"></script>
+  </body>
+</html>
